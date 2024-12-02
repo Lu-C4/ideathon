@@ -1,9 +1,9 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/navbar";
+import Footer from "./components/footer";
 import { ArrowRight, Lightbulb, IndianRupee, Users } from 'lucide-react';
-// import EventFlow from "./components/EventFlow";
-//@ts-ignore
-import Rules from "./components/Rules";
+// import EventFlow from "./components/eventFlow";
+
+import Rules from "./components/rules";
 import TeaRoadmap from "./components/roadmap";
 import Marquee from "@/components/ui/marquee";
 
