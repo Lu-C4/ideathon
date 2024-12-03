@@ -2,9 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon1.png" style="width: 50px; height: 50px;" />
+    <link id="favicon" rel="icon" type="image/svg+xml" href="/favicon1.png" style="width: 50px; height: 50px;" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ideathon</title>
+    <title>Brindavan Idea Challenge Competition</title>
+    <script>
+        // Check if the user prefers light mode
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+            document.getElementById('favicon').href = '/light.png'; // Update favicon for light mode
+        }
+    </script>
   </head>
   <body>
     <div id="root"></div>
