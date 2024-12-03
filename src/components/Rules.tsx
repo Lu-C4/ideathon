@@ -44,12 +44,6 @@ const rulesData = [
       "All required materials (PPTs, videos, etc.) must be submitted by the announced deadlines."
     ]
   },
-  // {
-  //   title: "Attendance",
-  //   items: [
-  //     "All team members must be present during their scheduled time."
-  //   ]
-  // },
   {
     title: "Code of Conduct",
     items: [
@@ -60,20 +54,20 @@ const rulesData = [
 
 const Rules = () => {
   return (
-    <section className="rules-section text-center mb-16 p-6  backdrop-filter backdrop-blur-lg">
-      <h2 className="text-4xl font-extrabold text-white mb-4">Rules and Regulations</h2>
-      <ol className="list-decimal list-inside text-left mx-auto max-w-2xl">
+<section className="rules-section text-center mb-16 p-4 md:p-6 backdrop-filter backdrop-blur-lg">
+      <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-6 md:mb-8">Rules and Regulations</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
         {rulesData.map((rule, index) => (
-          <li key={index} className="mb-4 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-4 shadow-lg">
-            <strong className="text-xl text-yellow-400">{rule.title}:</strong>
-            <ol className="list-disc list-inside ml-6">
+          <div key={index} className="bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg p-4 shadow-lg">
+            <h3 className="text-xl md:text-2xl font-bold text-yellow-400 mb-3">{rule.title}</h3>
+            <ul className="list-disc list-inside text-left text-purple-200">
               {rule.items.map((item, idx) => (
-                <li key={idx} className="text-purple-200">{item}</li>
+                <li key={idx} className="mb-2">{item}</li>
               ))}
-            </ol>
-          </li>
+            </ul>
+          </div>
         ))}
-      </ol>
+      </div>
     </section>
   );
 };
