@@ -40,7 +40,7 @@ function App() {
     <img src="/MoE-Logo.png" alt="Logo 4" className="w-full h-full object-contain rounded-full" />
   </div>
 </section>): 
-<section className="flex py-10 justify-between items-center space-x-4 overflow-x-auto">
+<section className="flex py-10 px-4 justify-between items-center space-x-4 overflow-x-auto">
   
   <div className="w-[20%] max-w-[180px] aspect-square bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
     <img src="/IEE.png" alt="Logo 2" className="w-[90%] h-[90%] object-contain rounded-full" />
