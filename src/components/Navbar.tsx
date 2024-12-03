@@ -7,7 +7,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <img
-              src="/src/assets/logo.webp"
+              src="/logo.webp"
               alt="Logo"
               className="w-40 sm:w-full mr-2 object-contain"
             />
