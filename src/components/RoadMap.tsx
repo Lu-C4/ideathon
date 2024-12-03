@@ -48,7 +48,7 @@ export default function RoadMap() {
       className="min-h-screen bg-gradient-to-br from-purple-700 to-blue-500 py-10 md:py-16 px-4 sm:px-6 lg:px-8"
     >
       <h1 className="text-3xl md:text-5xl font-bold text-center mb-8 md:mb-12 text-white">
-        Event flow
+        Stages of Evaluation
       </h1>
       <div className="max-w-4xl mx-auto">
         <div className="relative">
