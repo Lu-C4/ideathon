@@ -26,6 +26,34 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-700 to-blue-500 text-white">
       <Navbar />
+      { !isMobile ? (<section className="flex py-10 justify-center space-x-8 mb-10">
+  <div className="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/brce.webp" alt="Logo 1" className="w-full h-full object-contain rounded-full" />
+  </div>
+  <div className="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/IEE.png" alt="Logo 2" className="w-full h-full object-contain rounded-full" />
+  </div>
+  <div className="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/iiclogo-1.webp" alt="Logo 3" className="w-full h-full object-contain rounded-full" />
+  </div>
+  <div className="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/MoE-Logo.png" alt="Logo 4" className="w-full h-full object-contain rounded-full" />
+  </div>
+</section>): 
+<section className="flex py-10 justify-between items-center space-x-4 overflow-x-auto">
+  
+  <div className="w-[20%] max-w-[180px] aspect-square bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/IEE.png" alt="Logo 2" className="w-[90%] h-[90%] object-contain rounded-full" />
+  </div>
+  <div className="w-[20%] max-w-[180px] aspect-square bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/iiclogo-1.webp" alt="Logo 3" className="w-[90%] h-[90%] object-contain rounded-full" />
+  </div>
+  <div className="w-[20%] max-w-[180px] aspect-square bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+    <img src="/MoE-Logo.png" alt="Logo 4" className="w-[90%] h-[90%] object-contain rounded-full" />
+  </div>
+</section>
+
+}
       <main className="container mx-auto px-4 py-10 md:py-20">
         <section className="text-center mb-10 md:mb-20">
           <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 animate-fade-in-down">
