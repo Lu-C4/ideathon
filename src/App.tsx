@@ -102,13 +102,13 @@ function App() {
           </p>
           <div className="bg-transparent text-xl md:text-4xl bg-opacity-20 p-4 md:p-8 rounded-lg backdrop-filter backdrop-blur-lg inline-block border border-white">
             <p className="mb-3 md:mb-4">
-              <strong>Date:</strong> August 15, 2024
+              <strong>Date:</strong> December 6th, 2024
             </p>
             <p className="mb-3 md:mb-4">
               <strong>Time:</strong> 9:00 AM - 6:00 PM
             </p>
             <p className="mb-3 md:mb-4">
-              <strong>Venue:</strong> Tech Innovation Center
+              <strong>Venue:</strong> Brindavan College Of Engineering
             </p>
           </div>
         </section>
