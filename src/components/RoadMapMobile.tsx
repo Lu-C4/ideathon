@@ -39,7 +39,7 @@ export default function RoadMapMobile() {
       className="relative w-full max-w-4xl mx-auto px-4 py-16"
     >
         <h1 className="text-3xl md:text-5xl font-bold text-center mb-24 md:mb-12 text-white">
-            Event flow
+            Stages of Evaluation
         </h1>
       <div className="absolute left-4 top-36 bottom-0 w-0.5 bg-gray-200">
         <motion.div
