@@ -26,8 +26,8 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-700 to-blue-500 text-white">
       <Navbar />
-      { !isMobile ? (<section className="flex py-10 justify-center space-x-8 mb-10">
-  <div className="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
+      { !isMobile ? (<section className="flex mt-5   justify-center space-x-8 ">
+  <div className="w-32 h-32  bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
     <img src="/brce.webp" alt="Logo 1" className="w-full h-full object-contain rounded-full" />
   </div>
   <div className="w-32 h-32 bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
@@ -40,7 +40,7 @@ function App() {
     <img src="/MoE-Logo.png" alt="Logo 4" className="w-full h-full object-contain rounded-full" />
   </div>
 </section>): 
-<section className="flex py-10 px-4 justify-between items-center space-x-4 overflow-x-auto">
+<section className="flex mt-5 px-4 justify-between items-center space-x-4 overflow-x-auto">
   
   <div className="w-[20%] max-w-[180px] aspect-square bg-white bg-opacity-20 rounded-full flex items-center justify-center shadow-lg shrink-0">
     <img src="/IEE.png" alt="Logo 2" className="w-[90%] h-[90%] object-contain rounded-full" />
@@ -70,7 +70,7 @@ function App() {
         <section className="mb-10 -mx-4">
           {!isMobile ? (
             <Marquee pauseOnHover>
-              <div className="flex space-x-4 md:space-x-8">
+              <div className="flex mt-6 space-x-4 md:space-x-8">
                 <FeatureCard
                   icon={
                     <Lightbulb className="w-10 h-10 md:w-16 md:h-16 mb-3 md:mb-6 text-yellow-400" />
@@ -95,7 +95,7 @@ function App() {
               </div>
             </Marquee>
           ) : (
-            <div className="grid gap-6 w-[80%] mx-auto justify-center">
+            <div className="grid mt-24 gap-6 w-[80%] mx-auto justify-center">
               <FeatureCard
                 icon={
                   <Lightbulb className="w-10 h-10 md:w-16 md:h-16 mb-3 md:mb-6 text-yellow-400" />
@@ -133,7 +133,7 @@ function App() {
               <strong>Date:</strong> December 6th, 2024
             </p>
             <p className="mb-3 md:mb-4">
-              <strong>Time:</strong> 9:00 AM - 6:00 PM
+              <strong>Time:</strong> 9:00 AM onwards
             </p>
             <p className="mb-3 md:mb-4">
               <strong>Venue:</strong> Brindavan College Of Engineering
