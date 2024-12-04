@@ -66,12 +66,12 @@ function App() {
           <p className="text-lg md:text-3xl mb-6 md:mb-8 animate-fade-in-up">
             Pitch Your Ideas, Compete, and Win Big!
           </p>
-          <a href="https://forms.gle/4omosajLKEE7cRRj9" className="inline-block">
+          <a href="https://forms.gle/4omosajLKEE7cRRj9" target="_blank" className="inline-block">
             <button className="bg-yellow-400 text-purple-900 font-bold py-2 px-4 md:py-4 md:px-8 rounded-full text-lg md:text-2xl hover:bg-yellow-300 transition duration-300 ease-in-out transform hover:scale-105 animate-pulse">
               Register Now
-            </button>
+            </button> 
           </a>
-          <a href="https://chat.whatsapp.com/FmPFIEKu3lc1goVaqbrYhH" className="inline-block ml-4">
+          <a href="https://chat.whatsapp.com/FmPFIEKu3lc1goVaqbrYhH" target="_blank" className="inline-block ml-4">
             <button className="bg-white text-purple-900 font-bold py-2 px-4 md:py-4 md:px-8 rounded-full text-lg md:text-2xl hover:scale-105 transition duration-300 ease-in-out">
               <FontAwesomeIcon icon={faWhatsapp} size="lg" style={{color: "#25D366",}}/>
               <p className="ml-3 inline-block">Whatsapp</p>
