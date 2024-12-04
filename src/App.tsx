@@ -6,6 +6,7 @@ import Rules from "./components/Rules";
 import RoadMap from "./components/RoadMap";
 import RoadMapMobile from "./components/RoadMapMobile";
 import Marquee from "@/components/ui/marquee";
+import MapButton from "./components/MapsButton";
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -138,6 +139,9 @@ function App() {
             <p className="mb-3 md:mb-4">
               <strong>Venue:</strong> Brindavan College Of Engineering
             </p>
+            <div>
+              <MapButton url="https://maps.app.goo.gl/htGqdoLXMsxncejy8" text="Locate Us" />
+            </div>
           </div>
         </section>
 
