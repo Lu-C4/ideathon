@@ -6,15 +6,7 @@ const rulesData = [
     title: "Eligibility",
     items: [
       "Open to all students from colleges.",
-      "Teams can consist of 2-3 members. (50rs per person)"
-    ]
-  },
-  {
-    title: "Presentation",
-    items: [
-      "Each team must prepare a PowerPoint presentation (max 10 slides).",
-      "Time limit: 5-7 minutes per presentation in later rounds.",
-      "Visual aids, mockups, or prototypes are allowed."
+      "Teams may  consist of 2 or 3 members."
     ]
   },
   {

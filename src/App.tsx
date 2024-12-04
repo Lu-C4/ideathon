@@ -7,6 +7,9 @@ import RoadMap from "./components/RoadMap";
 import RoadMapMobile from "./components/RoadMapMobile";
 import Marquee from "@/components/ui/marquee";
 import MapButton from "./components/MapsButton";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import PresetationDetails from "./components/PresentationDetails"
 
 function App() {
   const [isMobile, setIsMobile] = useState(false);
@@ -63,9 +66,17 @@ function App() {
           <p className="text-lg md:text-3xl mb-6 md:mb-8 animate-fade-in-up">
             Pitch Your Ideas, Compete, and Win Big!
           </p>
-          <button className="bg-yellow-400 text-purple-900 font-bold py-2 px-4 md:py-4 md:px-8 rounded-full text-lg md:text-2xl hover:bg-yellow-300 transition duration-300 ease-in-out transform hover:scale-105 animate-pulse">
-            Register Now
-          </button>
+          <a href="https://forms.gle/4omosajLKEE7cRRj9" className="inline-block">
+            <button className="bg-yellow-400 text-purple-900 font-bold py-2 px-4 md:py-4 md:px-8 rounded-full text-lg md:text-2xl hover:bg-yellow-300 transition duration-300 ease-in-out transform hover:scale-105 animate-pulse">
+              Register Now
+            </button>
+          </a>
+          <a href="https://chat.whatsapp.com/FmPFIEKu3lc1goVaqbrYhH" className="inline-block ml-4">
+            <button className="bg-white text-purple-900 font-bold py-2 px-4 md:py-4 md:px-8 rounded-full text-lg md:text-2xl hover:scale-105 transition duration-300 ease-in-out">
+              <FontAwesomeIcon icon={faWhatsapp} size="lg" style={{color: "#25D366",}}/>
+              <p className="ml-3 inline-block">Whatsapp</p>
+            </button>
+          </a>
         </section>
 
         <section className="mb-10 -mx-4">
@@ -146,6 +157,8 @@ function App() {
         </section>
 
         <Rules />
+
+        <PresetationDetails />
         <section className="relative">
           {
             isMobile ? <RoadMapMobile /> : <RoadMap /> 

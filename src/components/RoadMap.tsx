@@ -6,18 +6,32 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const steps = [
   {
     title: "Round 1: Initial Idea Pitch (Preliminary Round)",
-    description:
-      "Each team presents their idea in 3 minutes using a single-slide poster or a brief verbal pitch. Judging Criteria: Clarity of the idea (30%), Relevance to the theme (30%), Originality (40%). Shortlisting: Top 50% of teams move to the next round.",
+    description: [
+      "Each team presents their idea in 3 minutes using a maximum of 5 slides presentation.",
+      "Judging Criteria: Clarity of the idea, Originality, Innovation, Slide Design and Time Utilization.",
+      "Shortlisting: Top 50% of teams move to the next round.",
+    ],
   },
   {
     title: "Round 2: Detailed PPT Presentation (Semifinal Round)",
-    description:
-      "5-7 minute PPT presentation followed by 2-3 minutes of Q&A with judges. Judging Criteria: Innovation & Creativity (25%), Feasibility/Practicality (25%), Impact/Scalability (25%), Presentation Skills (25%). Shortlisting: Top [X] teams based on scores advance to the final round.",
+    description: [
+      "The team will have to present their second ppt of 10 slides describing their idea in detail in 7 minutes.",
+      "Judging Criteria: Cost and time feasibility, Revenue, Sustainability, Impact/Scalability, Presentation Skills.",
+      "Shortlisting: Top 25% teams based on scores advance to the final round.",
+    ],
   },
   {
     title: "Round 3: Panel Discussion & Questionnaire (Final Round)",
-    description:
+    description: [
       "Each team faces a panel discussion or rapid-fire questionnaire session where judges probe deeper into their idea.",
+    ],
+  },
+  {
+    title: "Rewards",
+    description: [
+      "Top 3 teams will be given cash prize and certificates.",
+      "Participation certificates will also be provided for every participant.",
+    ],
   },
 ];
 
@@ -81,7 +95,7 @@ export default function RoadMap() {
           {steps.map((step, index) => (
             <div
               key={index}
-              className={`absolute left-8 md:left-10 transition-opacity duration-300 ${
+              className={`w-full absolute left-8 md:left-10 transition-opacity duration-300 ${
                 index <= activeStep ? "opacity-100" : "opacity-50"
               }`}
               style={{ top: `${(index * 100) / steps.length}%` }}
@@ -90,9 +104,11 @@ export default function RoadMap() {
                 <h2 className="text-lg md:text-2xl font-semibold text-yellow-400 mb-2">
                   {step.title}
                 </h2>
-                <p className="text-base md:text-lg text-gray-200">
-                  {step.description}
-                </p>
+                <ul className="list-inside text-base md:text-lg text-gray-200">
+                  {step.description.map((item, itemIndex) => (
+                    <li key={itemIndex}>{item}</li>
+                  ))}
+                </ul>
               </div>
             </div>
           ))}
