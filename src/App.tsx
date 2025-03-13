@@ -151,7 +151,7 @@ function App() {
               <strong>Venue:</strong> Brindavan College Of Engineering
             </p>
             <div>
-              <MapButton url="https://maps.app.goo.gl/htGqdoLXMsxncejy8" text="Locate Us" />
+              <MapButton url="https://maps.app.goo.gl/" text="Locate Us" />
             </div>
           </div>
         </section>
